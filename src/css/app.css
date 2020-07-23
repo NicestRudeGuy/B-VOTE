@@ -15,6 +15,12 @@
 
 .navy {
     background-color: black;
+    margin-right: 1px;
+}
+
+#myModal {
+    color: black;
+    text-align: center;
 }
 
 #navBarText {
@@ -27,7 +33,7 @@
 
 h1 {
     color: #ffffff;
-    text-shadow: 0 0 2px #fff;
+    text-shadow: 0 0 2px rgb(255, 255, 255);
 }
 
 img {
@@ -35,5 +41,6 @@ img {
     border-radius: 10px;
     height: auto;
     min-width: 50%;
-    max-width: 60%;
+    max-width: 90%;
+    margin: 0 auto;
 }

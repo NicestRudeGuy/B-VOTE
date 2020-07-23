@@ -202,11 +202,11 @@ App = {
       // Wait for votes to update
       $("#content").hide();
       $("#loader").show();
-      alert("Thank you for voting");
-
+      //alert("Thank you for voting");
+      $("#myModal").show();
+      $(".chart-container").hide();
+      //window.location.reload();
       App.render();
-      window.location.reload();
-
     }).catch(function (err) {
       console.error(err);
     });
@@ -221,5 +221,4 @@ $(function () {
     App.pieShow();
   });
 });
-
 
