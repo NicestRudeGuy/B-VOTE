@@ -1,5 +1,5 @@
 # B-VOTE
-Js Css Html Bootstrap based
+Eth Js Css Html Bootstrap based
 
 #scripts
 1. npm install
