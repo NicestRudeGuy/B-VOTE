@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Blockchain Voting</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body id="appBody">
+  <nav class="navy navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a id="navBarText" class=" navbar-brand" href="index.html">B-VOTE</a>
+      </div>
+
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-16 col-sm-12">
+        <div id="intro">
+          <h1 class="text-center">Decentralized Voting</h1>
+          <br />
+          <div id="loader">
+            <h1>
+              <p class="text-center">Loading!...</br>
+                Please Insert Your Private Key to Begin</p>
+              <img class="text-center" src="./images/vote.jpg" alt="eci">
+            </h1>
+          </div>
+          <!--  <div id="ins" >
+            <p>
+              First Login in the MetaMask wallet with your account's private key
+              Then Select your candidate
+              Then click vote
+              Then click ok when the alert happens.
+            </p>
+          </div> -->
+        </div>
+        <div id="content" style="display: none;">
+          <table class="table">
+            <tbody class="text-center" id="candidatesResults">
+
+            </tbody>
+          </table>
+          <form onSubmit="App.castVote(); return false;">
+            <div class="form-group">
+              <label for="candidatesSelect">Select party</label>
+              <select class="form-control" id="candidatesSelect">
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Vote</button>
+            <hr />
+          </form>
+          <p id="accountAddress" class="text-center"></p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="chart-container">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+  <!--   <script src="js/pie.js"></script> -->
+</body>
+
+</html>

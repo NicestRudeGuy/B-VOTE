@@ -1,0 +1,39 @@
+#appBody {
+    background-color: #222;
+    color: white;
+    font-weight: 300;
+}
+
+#boxa {
+    width: 100px;
+    border: 10px solid coral;
+    padding: 50px;
+    margin: 20px;
+
+}
+
+
+.navy {
+    background-color: black;
+}
+
+#navBarText {
+    color: white;
+    font-weight: 300;
+    font-size: 30px;
+    font-style: oblique;
+    font-family: fantasy;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow: 0 0 2px #fff;
+}
+
+img {
+    border: rgb(0, 183, 255) solid 5px;
+    border-radius: 10px;
+    height: auto;
+    min-width: 50%;
+    max-width: 60%;
+}
